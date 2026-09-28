@@ -1,4 +1,4 @@
-/* ===== Variables ===== */
+
 :root {
   --bg: #0a0e17;
   --bg-elevated: #111827;
@@ -26,7 +26,6 @@
   --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ===== Reset & Base ===== */
 *,
 *::before,
 *::after {
@@ -78,7 +77,6 @@ ol {
   padding: 0 24px;
 }
 
-/* ===== Typography ===== */
 .text-gradient {
   background: var(--gradient);
   -webkit-background-clip: text;
@@ -895,7 +893,6 @@ ol {
   text-align: center;
 }
 
-/* ===== Responsive ===== */
 @media (max-width: 1024px) {
 
   .section {
@@ -977,7 +974,6 @@ ol {
     font-size: 1.15rem;
     padding: 16px 20px;
     background: var(--bg-card);
-    /* Фон для каждого пункта меню */
     border: 1px solid var(--border);
     border-radius: var(--radius-sm);
     color: var(--text);
