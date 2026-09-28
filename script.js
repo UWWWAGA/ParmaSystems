@@ -1,10 +1,9 @@
-// Header scroll effect
+
 const header = document.getElementById('header');
 window.addEventListener('scroll', () => {
   header.classList.toggle('scrolled', window.scrollY > 20);
 });
 
-// Mobile menu
 const burger = document.getElementById('burger');
 const nav = document.getElementById('nav');
 
@@ -13,7 +12,6 @@ burger.addEventListener('click', () => {
   burger.classList.toggle('active');
 });
 
-// Close menu on link click
 nav.querySelectorAll('.nav__link').forEach(link => {
   link.addEventListener('click', () => {
     nav.classList.remove('open');
@@ -21,7 +19,6 @@ nav.querySelectorAll('.nav__link').forEach(link => {
   });
 });
 
-// Form submit
 const form = document.getElementById('contactForm');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -39,7 +36,6 @@ form.addEventListener('submit', (e) => {
   }, 2500);
 });
 
-// Smooth reveal on scroll
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -59,7 +55,6 @@ document.querySelectorAll('.service-card, .solution-card, .cert-card, .about-fea
   observer.observe(el);
 });
 
-// Add visible styles
 const style = document.createElement('style');
 style.textContent = `
   .service-card.visible,
